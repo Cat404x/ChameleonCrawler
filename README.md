@@ -1,5 +1,4 @@
 
-```markdown
 # ChameleonCrawler
 
 ChameleonCrawler is a Python script that scans social media posts for specified keywords and links them to the usernames of the posts' authors. This tool can be useful for social media analysis, trend tracking, or research purposes.
@@ -77,5 +76,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 This tool is for educational and research purposes only. Always respect the terms of service of the social media platforms you're analyzing and adhere to data privacy regulations.
 ```
+
+
 
 
