@@ -1,38 +1,54 @@
-# ChameleonCrawler
 
 ```markdown
 # ChameleonCrawler
 
-ChameleonCrawler is a Python script that finds specified keywords in social media posts and links them to the usernames of the posts' authors.
+ChameleonCrawler is a Python script that scans social media posts for specified keywords and links them to the usernames of the posts' authors. This tool can be useful for social media analysis, trend tracking, or research purposes.
 
-## How to Run the Script
+## Features
 
-### Prerequisites
+- Searches for user-defined keywords in social media posts
+- Links found keywords to post authors' usernames
+- Outputs results in an easy-to-read dictionary format
 
-- Python 3.x installed on your machine
+## Prerequisites
 
-### Steps to Run
+- Python 3.x
+- Git (for cloning the repository)
 
-1. **Clone the Repository:**
-   ```sh
+## Installation
+
+1. Clone the repository:
+   ```
    git clone https://github.com/Cat404x/ChameleonCrawler.git
+   ```
+
+2. Navigate to the project directory:
+   ```
    cd ChameleonCrawler
    ```
 
-2. **List the Files:**
-   ```sh
-   ls
+3. (Optional) Set up a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
-3. **Run the Script:**
-   ```sh
-   python ChameleonCrawler.py
+4. Install required dependencies:
+   ```
+   pip install -r requirements.txt
    ```
 
-### Expected Output
+## Usage
 
-The script will output a dictionary where keys are the specified keywords and values are lists of usernames whose posts contain those keywords. For example:
+Run the script using Python:
 
+```
+python ChameleonCrawler.py
+```
+
+The script will output a dictionary where keys are the specified keywords and values are lists of usernames whose posts contain those keywords.
+
+Example output:
 ```python
 {
     'python': ['user1', 'user3'],
@@ -41,8 +57,25 @@ The script will output a dictionary where keys are the specified keywords and va
 }
 ```
 
+## Configuration
+
+(Add information about any configuration files or environment variables, if applicable)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
- Free to add any advice or to help improve code 
+## Acknowledgments
+
+(Add any acknowledgments or credits here)
+
+## Disclaimer
+
+This tool is for educational and research purposes only. Always respect the terms of service of the social media platforms you're analyzing and adhere to data privacy regulations.
+```
+
+
