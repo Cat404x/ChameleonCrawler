@@ -1,3 +1,4 @@
+
 import re
 
 def find_keywords_and_link_to_username(posts, keywords):
@@ -11,8 +12,8 @@ def find_keywords_and_link_to_username(posts, keywords):
 
     Returns:
         A dictionary where keys are keywords and values are lists of usernames 
-        whose posts contain that keyword.  Returns an empty dictionary if no 
-        matches are found.  Handles case-insensitive keyword matching.
+        whose posts contain that keyword. Returns an empty dictionary if no 
+        matches are found. Handles case-insensitive keyword matching.
     """
 
     keyword_username_map = {}
@@ -20,8 +21,8 @@ def find_keywords_and_link_to_username(posts, keywords):
         keyword_username_map[keyword] = []
 
     for post in posts:
-        text = post['text'].lower()
-        username = post['username']
+        text = post.get('text', '').lower()
+        username = post.get('username', 'unknown')
         for keyword in keywords:
             if re.search(r'\b' + re.escape(keyword.lower()) + r'\b', text):
                 keyword_username_map[keyword].append(username)
